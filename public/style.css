@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+
+:root {
+  --primary: #212529;
+  --accent: #198754; /* Green */
+  --bg: #f8f9fa;
+  --white: #ffffff;
+  --badge-bg: #ffc107; /* Yellow/Orange for Menu Badge */
+  --border: #e9ecef;
+  --radius: 16px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Tajawal', sans-serif; /* Modern Arabic Font */
+  background-color: var(--bg);
+  color: var(--primary);
+  direction: rtl;
+  padding-bottom: 40px;
+}
+
+/* --- Header Area --- */
+.hero {
+  background: var(--white);
+  padding: 30px 20px 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand-name {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.slogan {
+  margin: 8px 0 0;
+  color: #6c757d;
+  font-size: 15px;
+}
+
+/* --- Sticky Category Nav --- */
+.nav-scroller {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+  overflow-x: auto; /* Allows horizontal scrolling */
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
+}
+
+.nav-list {
+  display: inline-flex;
+  padding: 0 15px;
+  gap: 10px;
+}
+
+.nav-pill {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #f1f3f5;
+  color: var(--primary);
+  border-radius: 99px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.nav-pill.active, .nav-pill:active {
+  background: var(--primary);
+  color: var(--white);
+}
+
+/* --- Menu Container --- */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+
+/* --- Category Section --- */
+.category-section {
+  margin-top: 30px;
+  scroll-margin-top: 80px; /* Fixes sticky header covering title */
+}
+
+.category-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding-right: 10px;
+  border-right: 4px solid var(--accent);
+  color: rgb(71, 115, 62);
+}
+
+/* --- Item Card --- */
+.item-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.item-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.item-price {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--accent);
+  background: #e9f7ef;
+  padding: 4px 10px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.item-desc {
+  margin: 0;
+  color: #6c757d;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* --- The Menu Badge --- */
+.menu-badge {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--badge-bg);
+  color: #333;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-top: 6px;
+}
+
+.loading, .empty {
+  text-align: center;
+  padding: 50px;
+  color: #adb5bd;
+}

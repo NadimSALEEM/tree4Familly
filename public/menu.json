@@ -1,0 +1,65 @@
+[
+  {
+    "id": "101",
+    "name": "شاورما عربي",
+    "price": "10",
+    "description": "وجبة شاورما دجاج بخبز الصاج مع الثوم والمخلل",
+    "category": "سندويشات",
+    "ismenu": true,
+    "menu": true
+  },
+  {
+    "id": "102",
+    "name": "برغر لحم كلاسيك",
+    "price": "12",
+    "description": "قطعة لحم بقري مشوي مع الخس والبندورة والجبنة",
+    "category": "سندويشات",
+    "ismenu": true,
+    "menu": true
+  },
+  {
+    "id": "103",
+    "name": "بيتزا بيبيروني",
+    "price": "15",
+    "description": "بيتزا إيطالية مع صلصة الطماطم وجبنة الموزاريلا وشرائح البيبيروني",
+    "category": "بيتزا",
+    "ismenu": false,
+    "menu": true
+  },
+  {
+    "id": "104",
+    "name": "بيتزا خضار",
+    "price": "13",
+    "description": "تشكيلة من الفلفل الملون والفطر والزيتون الأسود",
+    "category": "بيتزا",
+    "ismenu": false,
+    "menu": true
+  },
+  {
+    "id": "105",
+    "name": "كولا بارد",
+    "price": "2",
+    "description": "علبة كوكاكولا باردة منعشة",
+    "category": "مشروبات غازية",
+    "ismenu": false,
+    "menu": true
+  },
+  {
+    "id": "106",
+    "name": "عصير برتقال فريش",
+    "price": "4",
+    "description": "عصير برتقال طبيعي معصور طازج",
+    "category": "مشروبات غازية",
+    "ismenu": false,
+    "menu": true
+  },
+  {
+    "id": "107",
+    "name": "كنافة نابلسية",
+    "price": "6",
+    "description": "كنافة بالجبنة الساخنة مع القطر والفستق الحلبي",
+    "category": "حلويات",
+    "ismenu": false,
+    "menu": true
+  }
+]
