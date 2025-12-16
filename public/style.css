@@ -164,3 +164,38 @@ body {
   padding: 50px;
   color: #adb5bd;
 }
+
+/* --- Variants (Sizes) Styling --- */
+.variants-list {
+  margin-top: 10px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.variant-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  border-bottom: 1px dashed #dee2e6;
+}
+
+.variant-item:last-child {
+  border-bottom: none;
+}
+
+.v-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #495057;
+}
+
+.v-price {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
+}

@@ -2,15 +2,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("menu-container");
   const navContainer = document.getElementById("nav-list");
 
+  // Helper: Format Price
   const formatPrice = (p) => {
     const n = Number(p);
-    if (Number.isFinite(n)) return `${n.toFixed(n % 1 === 0 ? 0 : 2)} ل.س`; 
+    if (Number.isFinite(n)) return `${n.toFixed(0)} ل.س`; // Assuming Syrian Lira based on context
     return `${p}`;
   };
 
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 
-  // --- NEW: FETCH FROM LOCAL JSON FILE ---
+  // Force fresh load
   fetch("menu.json?v=" + new Date().getTime())
     .then(response => {
         if (!response.ok) throw new Error("Could not load menu");
@@ -32,22 +33,17 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // 1. Group items
     const byCategory = new Map();
 
     allData.forEach((item) => {
-      // Logic: if 'menu' is false, skip
       if (item.menu === false) return;
-
       const cat = item.category || "أخرى";
       if (!byCategory.has(cat)) byCategory.set(cat, []);
       byCategory.get(cat).push(item);
     });
 
-    // 2. Sort Categories
     const sortedCategories = [...byCategory.entries()].sort((a, b) => a[0].localeCompare(b[0]));
 
-    // 3. Render
     sortedCategories.forEach(([cat, items]) => {
       // Nav Link
       const navLink = document.createElement("a");
@@ -62,10 +58,28 @@ document.addEventListener("DOMContentLoaded", () => {
       section.id = `cat-${esc(cat.replace(/\s+/g, '-'))}`;
       section.innerHTML = `<h2 class="category-title">${esc(cat)}</h2>`;
 
-      // Sort items by name
-      items.sort((a, b) => (a.name || "").localeCompare(b.name || ""));
-
       items.forEach((it) => {
+        let priceHtml = "";
+        
+        // CHECK: Does it have variants (Sizes) or just one price?
+        if (it.variants && it.variants.length > 0) {
+            // Create a list of variants
+            let variantsHtml = `<div class="variants-list">`;
+            it.variants.forEach(v => {
+                variantsHtml += `
+                    <div class="variant-item">
+                        <span class="v-name">${esc(v.name)}</span>
+                        <span class="v-price">${formatPrice(v.price)}</span>
+                    </div>`;
+            });
+            variantsHtml += `</div>`;
+            priceHtml = variantsHtml;
+        } else {
+            // Regular single price
+            priceHtml = `<div class="item-price">${formatPrice(it.price)}</div>`;
+        }
+
+        // Check for Menu Badge (optional)
         let menuBadgeHtml = "";
         if (it.ismenu === true) {
             menuBadgeHtml = `<div class="menu-badge"><span>✨ متوفر كوجبة</span></div>`;
@@ -76,9 +90,11 @@ document.addEventListener("DOMContentLoaded", () => {
         card.innerHTML = `
           <div class="card-top">
             <h3 class="item-name">${esc(it.name)}</h3>
-            <div class="item-price">${formatPrice(it.price)}</div>
-          </div>
+            ${!it.variants ? priceHtml : ''} </div>
           <p class="item-desc">${esc(it.description || "")}</p>
+          
+          ${it.variants ? priceHtml : ''}
+          
           ${menuBadgeHtml}
         `;
         section.appendChild(card);

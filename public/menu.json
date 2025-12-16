@@ -1,65 +1,275 @@
 [
   {
-    "id": "101",
-    "name": "شاورما دجاج",
-    "price": "10",
-    "description": "وجبة شاورما دجاج بخبز الصاج مع الثوم والمخلل",
+    "id": "s1",
+    "name": "زنجر",
+    "price": "2500",
+    "description": "سندويش زنجر دجاج مقرمش حار",
     "category": "سندويشات",
-    "ismenu": true,
     "menu": true
   },
   {
-    "id": "102",
-    "name": "برغر لحم كلاسيك",
-    "price": "12",
-    "description": "قطعة لحم بقري مشوي مع الخس والبندورة والجبنة",
+    "id": "s2",
+    "name": "سوبريم",
+    "price": "2500",
+    "description": "سندويش سوبريم دجاج مع الجبنة والمدخن",
     "category": "سندويشات",
-    "ismenu": true,
     "menu": true
   },
   {
-    "id": "103",
-    "name": "بيتزا بيبيروني",
-    "price": "15",
-    "description": "بيتزا إيطالية مع صلصة الطماطم وجبنة الموزاريلا وشرائح البيبيروني",
-    "category": "بيتزا",
-    "ismenu": false,
+    "id": "s3",
+    "name": "كنتاكي",
+    "price": "2400",
+    "description": "سندويش دجاج بخلطة كنتاكي الأصلية",
+    "category": "سندويشات",
     "menu": true
   },
   {
-    "id": "104",
+    "id": "s4",
+    "name": "كرسبي",
+    "price": "2200",
+    "description": "سندويش دجاج كرسبي مقرمش",
+    "category": "سندويشات",
+    "menu": true
+  },
+  {
+    "id": "s5",
+    "name": "سكالوب",
+    "price": "2200",
+    "description": "سندويش سكالوب دجاج بانيه",
+    "category": "سندويشات",
+    "menu": true
+  },
+  {
+    "id": "s6",
+    "name": "سبايسي",
+    "price": "2300",
+    "description": "سندويش دجاج حار خاص",
+    "category": "سندويشات",
+    "menu": true
+  },
+  {
+    "id": "s7",
+    "name": "فاهيتا",
+    "price": "2600",
+    "description": "دجاج متبل مع الفلفل الملون والبصل",
+    "category": "سندويشات",
+    "menu": true
+  },
+  {
+    "id": "s8",
+    "name": "فرانسيسكو",
+    "price": "2600",
+    "description": "دجاج مشوي مع الفطر والذرة والجبنة",
+    "category": "سندويشات",
+    "menu": true
+  },
+  {
+    "id": "s9",
+    "name": "مكسيكانو",
+    "price": "2600",
+    "description": "دجاج حار على الطريقة المكسيكية",
+    "category": "سندويشات",
+    "menu": true
+  },
+  {
+    "id": "s10",
+    "name": "تشيز برغر دجاج",
+    "price": "2000",
+    "description": "برغر دجاج مشوي مع شريحة جبنة",
+    "category": "سندويشات",
+    "menu": true
+  },
+  {
+    "id": "s11",
+    "name": "برغر دجاج مع بيض",
+    "price": "2200",
+    "description": "برغر دجاج مميز مع بيض مقلي",
+    "category": "سندويشات",
+    "menu": true
+  },
+  {
+    "id": "s12",
+    "name": "تشيز برغر لحمة",
+    "price": "2500",
+    "description": "برغر لحم بلدي مع الجبنة",
+    "category": "سندويشات",
+    "menu": true
+  },
+  {
+    "id": "s13",
+    "name": "برغر لحمة مع بيض",
+    "price": "2700",
+    "description": "برغر لحم دسم مع البيض",
+    "category": "سندويشات",
+    "menu": true
+  },
+  {
+    "id": "s14",
+    "name": "برغر حسب الطلب",
+    "price": "3000",
+    "description": "اختر اضافاتك الخاصة",
+    "category": "سندويشات",
+    "menu": true
+  },
+  {
+    "id": "s15",
+    "name": "صحن بطاطا",
+    "price": "1000",
+    "description": "بطاطا مقلية ذهبية مقرمشة",
+    "category": "سندويشات",
+    "menu": true
+  },
+  {
+    "id": "s16",
+    "name": "هني ماسترد دجاج",
+    "price": "2400",
+    "description": "دجاج بصوص العسل والخردل",
+    "category": "سندويشات",
+    "menu": true
+  },
+  {
+    "id": "s17",
+    "name": "شيش طاووق",
+    "price": "2500",
+    "description": "قطع شيش طاووق مشوية",
+    "category": "سندويشات",
+    "menu": true
+  },
+  {
+    "id": "p1",
     "name": "بيتزا خضار",
-    "price": "13",
-    "description": "تشكيلة من الفلفل الملون والفطر والزيتون الأسود",
+    "description": "فليفلة، فطر، زيتون، ذرة، جبنة",
     "category": "بيتزا",
-    "ismenu": false,
+    "menu": true,
+    "variants": [
+      { "name": "صغير", "price": "2000" },
+      { "name": "وسط", "price": "3000" },
+      { "name": "عائلي", "price": "5000" }
+    ]
+  },
+  {
+    "id": "p2",
+    "name": "بيتزا خضار أطراف جبنة",
+    "description": "بيتزا خضار محشية الأطراف بالجبنة",
+    "category": "بيتزا",
+    "menu": true,
+    "variants": [
+      { "name": "صغير", "price": "2500" },
+      { "name": "وسط", "price": "4000" },
+      { "name": "عائلي", "price": "6000" }
+    ]
+  },
+  {
+    "id": "p3",
+    "name": "بيتزا مارغريتا",
+    "description": "صلصة طماطم وجبنة موزاريلا غنية",
+    "category": "بيتزا",
+    "menu": true,
+    "variants": [
+      { "name": "صغير", "price": "1500" },
+      { "name": "وسط", "price": "2500" },
+      { "name": "عائلي", "price": "4500" }
+    ]
+  },
+  {
+    "id": "p333",
+    "name": "بيتزا مارغريتا أطراف جبنة",
+    "description": "بيتزا مارغريتا محشية الأطراف بالجبنة",
+    "category": "بيتزا",
+    "menu": true,
+    "variants": [
+      { "name": "صغير", "price": "2500" },
+      { "name": "وسط", "price": "4000" },
+      { "name": "عائلي", "price": "6000" }
+    ]
+  },
+  {
+    "id": "p4",
+    "name": "بيتزا اللحوم",
+    "description": "ببروني، سجق، أو سلامي مع الجبنة",
+    "category": "بيتزا",
+    "menu": true,
+    "variants": [
+      { "name": "صغير", "price": "2500" },
+      { "name": "وسط", "price": "3500" },
+      { "name": "عائلي", "price": "5500" }
+    ]
+  },
+  {
+    "id": "p444",
+    "name": "بيتزا اللحوم أطراف جبنة",
+    "description": "بيتزا اللحوم محشية الأطراف بالجبنة",
+    "category": "بيتزا",
+    "menu": true,
+    "variants": [
+      { "name": "صغير", "price": "2500" },
+      { "name": "وسط", "price": "4000" },
+      { "name": "عائلي", "price": "6000" }
+    ]
+  },
+  {
+    "id": "m1",
+    "name": "وجبة كرسبي",
+    "price": "4000",
+    "description": "قطع كرسبي، بطاطا، ثوم، كولسلو، خبز",
+    "category": "وجبات",
+    "ismenu": true,
     "menu": true
   },
   {
-    "id": "105",
-    "name": "كولا بارد",
-    "price": "2",
-    "description": "علبة كوكاكولا باردة منعشة",
-    "category": "مشروبات غازية",
-    "ismenu": false,
+    "id": "m2",
+    "name": "وجبة سكالوب",
+    "price": "4000",
+    "description": "سكالوب دجاج، بطاطا، مقبلات",
+    "category": "وجبات",
+    "ismenu": true,
     "menu": true
   },
   {
-    "id": "106",
-    "name": "عصير برتقال فريش",
-    "price": "4",
-    "description": "عصير برتقال طبيعي معصور طازج",
-    "category": "مشروبات غازية",
-    "ismenu": false,
+    "id": "m3",
+    "name": "وجبة سبايسي",
+    "price": "4200",
+    "description": "وجبة دجاج حار مع الاضافات",
+    "category": "وجبات",
+    "ismenu": true,
     "menu": true
   },
   {
-    "id": "107",
-    "name": "كنافة نابلسية",
-    "price": "6",
-    "description": "كنافة بالجبنة الساخنة مع القطر والفستق الحلبي",
-    "category": "حلويات",
-    "ismenu": false,
+    "id": "m4",
+    "name": "وجبة شاورما عربي",
+    "price": "3500",
+    "description": "سندويش مقطع بخبز الصاج مع ثوم ومخلل وبطاطا",
+    "category": "وجبات",
+    "ismenu": true,
     "menu": true
+  },
+  {
+    "id": "m5",
+    "name": "وجبة مكسيكانو / فاهيتا",
+    "price": "4500",
+    "description": "وجبة كاملة تقدم مع الرز أو البطاطا",
+    "category": "وجبات",
+    "ismenu": true,
+    "menu": true
+  },
+  {
+    "id": "m6",
+    "name": "طوشكا / مسخن",
+    "price": "3000",
+    "description": "خبز محشي لحم وجبنة (طوشكا) أو دجاج وسماق (مسخن)",
+    "category": "وجبات",
+    "ismenu": true,
+    "menu": true
+  },
+  {
+    "id": "m7",
+    "name": "وجبة رياضية (دايت)",
+    "description": "صدر دجاج مشوي مع خضار سوتيه (عالي البروتين)",
+    "category": "وجبات",
+    "menu": true,
+    "variants": [
+      { "name": "200g", "price": "2500" },
+      { "name": "300g", "price": "3500" }
+    ]
   }
 ]
