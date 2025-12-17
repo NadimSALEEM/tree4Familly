@@ -1,0 +1,63 @@
+/* =========================================
+   THEME DEFINITIONS
+   These override the :root variables in style.css
+   based on the class added to the <body> tag.
+   ========================================= */
+
+/* --- 1. RESTAURANT 1 (The Classic Green/Yellow) --- */
+body.res1 {
+  --primary: #1c1c1c;
+  --accent: #198754;      /* Tree 4 Green */
+  --bg: #fff3cd;          /* The Yellowish BG you like */
+  --white: #ffffff;
+  --badge-bg: #e4f455;    /* Strong Lime/Orange */
+  --border: #ffd166;
+  --head: #ffe08a;        /* Solid Yellow Header */
+}
+
+/* --- 2. RESTAURANT 2 (Fried Chicken/Meals - Warm & Spicy) --- */
+body.res2 {
+  --primary: #2d1b0e;     /* Dark Brown Text */
+  --accent: #d35400;      /* Burnt Orange / BBQ */
+  --bg: #fdfbf7;          /* Warm Cream Background */
+  --white: #ffffff;
+  --badge-bg: #ffccbc;    /* Soft Peach Badge */
+  --border: #fae5d3;      /* Light Orange Border */
+  
+  /* We can use gradients in variables too! */
+  --head: linear-gradient(135deg, #e67e22 0%, #d35400 100%); 
+}
+
+/* Specific override for Res2 Hero text to be white if using dark gradient */
+body.res2 .hero .brand-name, 
+body.res2 .hero .slogan {
+  color: white; 
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* --- 3. CAFETERIA (Drinks/Shisha - Chill & Cool) --- */
+body.cafe {
+  --primary: #2c0b2e;     /* Dark Purple Text */
+  --accent: #8e44ad;      /* Vibrant Purple */
+  --bg: #f3f0ff;          /* Very Light Lavender BG */
+  --white: #ffffff;
+  --badge-bg: #81d4fa;    /* Light Blue Badge */
+  --border: #e1bee7;      /* Purple Border */
+  
+  --head: linear-gradient(135deg, #8e44ad 0%, #3498db 100%);
+}
+
+/* Cafe Hero Text White */
+body.cafe .hero .brand-name, 
+body.cafe .hero .slogan {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Make Cafe Prices look like cool badges */
+body.cafe .item-price {
+  background: white;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  box-shadow: 0 2px 5px rgba(142, 68, 173, 0.2);
+}

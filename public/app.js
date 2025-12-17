@@ -82,6 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // --- VENUE SWITCHER (Called by HTML Buttons) ---
 function switchVenue(venueId) {
     currentVenue = venueId;
+    document.body.className = venueId;
     
     // Update Buttons UI (Visual Active State)
     document.querySelectorAll('.venue-btn').forEach(btn => {

@@ -2,17 +2,18 @@
   {
     "id": "s1",
     "name": "زنجر",
-    "price": "2500",
-    "description": "سندويش زنجر دجاج مقرمش حار",
+    "price": "99999999999",
+    "description": "سندويش زنجر",
     "category": "سندويشات",
     "venue": "res1",
-    "menu": true
+    "menu": true,
+    "ismenu": true
   },
   {
     "id": "s2",
     "name": "سوبريم",
-    "price": "2500",
-    "description": "سندويش سوبريم دجاج مع الجبنة والمدخن",
+    "price": "30000",
+    "description": "سندويش سوبريم",
     "category": "سندويشات",
     "venue": "res1",
     "menu": true
@@ -20,26 +21,26 @@
   {
     "id": "s3",
     "name": "كنتاكي",
-    "price": "2400",
-    "description": "سندويش دجاج بخلطة كنتاكي الأصلية",
+    "price": "30000",
+    "description": "سندويش كنتاكي",
     "category": "سندويشات",
     "venue": "res1",
     "menu": true
   },
   {
     "id": "s4",
-    "name": "كرسبي",
-    "price": "2200",
-    "description": "سندويش دجاج كرسبي مقرمش",
+    "name": "كريسبي",
+    "price": "25000",
+    "description": "سندويش كريسبي",
     "category": "سندويشات",
     "venue": "res1",
     "menu": true
   },
   {
     "id": "s5",
-    "name": "سكالوب",
-    "price": "2200",
-    "description": "سندويش سكالوب دجاج بانيه",
+    "name": "اسكالوب",
+    "price": "25000",
+    "description": "سندويش اسكالوب",
     "category": "سندويشات",
     "venue": "res1",
     "menu": true
@@ -47,26 +48,17 @@
   {
     "id": "s6",
     "name": "سبايسي",
-    "price": "2300",
-    "description": "سندويش دجاج حار خاص",
-    "category": "سندويشات",
-    "venue": "res1",
-    "menu": true
-  },
-  {
-    "id": "s7",
-    "name": "فاهيتا",
-    "price": "2600",
-    "description": "دجاج متبل مع الفلفل الملون والبصل",
+    "price": "25000",
+    "description": "سندويش سبايسي حار",
     "category": "سندويشات",
     "venue": "res1",
     "menu": true
   },
   {
     "id": "s8",
-    "name": "فرانسيسكو",
-    "price": "2600",
-    "description": "دجاج مشوي مع الفطر والذرة والجبنة",
+    "name": "فرانشيسكو",
+    "price": "30000",
+    "description": "سندويش فرانشيسكو",
     "category": "سندويشات",
     "venue": "res1",
     "menu": true
@@ -74,8 +66,8 @@
   {
     "id": "s9",
     "name": "مكسيكانو",
-    "price": "2600",
-    "description": "دجاج حار على الطريقة المكسيكية",
+    "price": "30000",
+    "description": "سندويش مكسيكانو",
     "category": "سندويشات",
     "venue": "res1",
     "menu": true
@@ -83,8 +75,8 @@
   {
     "id": "s10",
     "name": "تشيز برغر دجاج",
-    "price": "2000",
-    "description": "برغر دجاج مشوي مع شريحة جبنة",
+    "price": "20000",
+    "description": "برغر دجاج مع جبنة",
     "category": "سندويشات",
     "venue": "res1",
     "menu": true
@@ -92,8 +84,8 @@
   {
     "id": "s11",
     "name": "برغر دجاج مع بيض",
-    "price": "2200",
-    "description": "برغر دجاج مميز مع بيض مقلي",
+    "price": "25000",
+    "description": "برغر دجاج مع بيض",
     "category": "سندويشات",
     "venue": "res1",
     "menu": true
@@ -101,8 +93,8 @@
   {
     "id": "s12",
     "name": "تشيز برغر لحمة",
-    "price": "2500",
-    "description": "برغر لحم بلدي مع الجبنة",
+    "price": "25000",
+    "description": "برغر لحم مع جبنة",
     "category": "سندويشات",
     "venue": "res1",
     "menu": true
@@ -110,8 +102,8 @@
   {
     "id": "s13",
     "name": "برغر لحمة مع بيض",
-    "price": "2700",
-    "description": "برغر لحم دسم مع البيض",
+    "price": "30000",
+    "description": "برغر لحم مع بيض",
     "category": "سندويشات",
     "venue": "res1",
     "menu": true
@@ -119,187 +111,364 @@
   {
     "id": "s14",
     "name": "برغر حسب الطلب",
-    "price": "3000",
-    "description": "اختر اضافاتك الخاصة",
+    "price": "35000",
+    "description": "برغر مع إضافات خاصة",
     "category": "سندويشات",
     "venue": "res1",
     "menu": true
   },
   {
     "id": "s15",
-    "name": "صحن بطاطا",
-    "price": "1000",
-    "description": "بطاطا مقلية ذهبية مقرمشة",
+    "name": "بطاطا سعادة",
+    "price": "15000",
+    "description": "بطاطا سعادة",
     "category": "سندويشات",
     "venue": "res1",
     "menu": true
   },
   {
     "id": "s16",
-    "name": "هني ماسترد دجاج",
-    "price": "2400",
-    "description": "دجاج بصوص العسل والخردل",
+    "name": "بطاطا",
+    "price": "12000",
+    "description": "سندويش بطاطا",
     "category": "سندويشات",
     "venue": "res1",
     "menu": true
   },
   {
     "id": "s17",
-    "name": "شيش طاووق",
-    "price": "2500",
-    "description": "قطع شيش طاووق مشوية",
+    "name": "هني ماسترد دجاج",
+    "price": "30000",
+    "description": "دجاج بصلصة الهني ماسترد",
     "category": "سندويشات",
     "venue": "res1",
     "menu": true
   },
   {
-    "id": "p1",
+    "id": "s18",
+    "name": "شيش تري فور",
+    "price": "32000",
+    "description": "شيش Tree 4 الخاص",
+    "category": "سندويشات",
+    "venue": "res1",
+    "menu": true
+  },
+  {
+    "id": "s19",
+    "name": "شيش مع بطاطا",
+    "price": "32000",
+    "description": "شيش طاووق مع بطاطا",
+    "category": "سندويشات",
+    "venue": "res1",
+    "menu": true
+  },
+  {
+    "id": "s20",
+    "name": "شيش مع جبنة",
+    "price": "32000",
+    "description": "شيش طاووق مع جبنة",
+    "category": "سندويشات",
+    "venue": "res1",
+    "menu": true
+  },
+  {
+    "id": "s21",
+    "name": "شيش شاورما",
+    "price": "32000",
+    "description": "سندويش شيش شاورما",
+    "category": "سندويشات",
+    "venue": "res1",
+    "menu": true
+  },
+  {
+    "id": "s22",
+    "name": "طوشكا / سجق",
+    "price": "35000",
+    "description": "سندويش طوشكا أو سجق",
+    "category": "سندويشات",
+    "venue": "res1",
+    "menu": true
+  },
+  {
+    "id": "s23",
+    "name": "اوريغانو",
+    "price": "20000",
+    "description": "سندويش أوريغانو",
+    "category": "سندويشات",
+    "venue": "res1",
+    "menu": true
+  },
+  {
+    "id": "s24",
+    "name": "هوت دوغ",
+    "price": "20000",
+    "description": "سندويش هوت دوغ",
+    "category": "سندويشات",
+    "venue": "res1",
+    "menu": true
+  },
+  {
+    "id": "s25",
+    "name": "كرانشي",
+    "price": "28000",
+    "description": "سندويش كرانشي",
+    "category": "سندويشات",
+    "venue": "res1",
+    "menu": true
+  },
+  {
+    "id": "s26",
+    "name": "كريسبي تري فور",
+    "price": "30000",
+    "description": "كريسبي Tree 4 الخاص",
+    "category": "سندويشات",
+    "venue": "res1",
+    "menu": true
+  },
+  {
+    "id": "s27",
+    "name": "فيلادلفيا",
+    "price": "35000",
+    "description": "سندويش فيلادلفيا",
+    "category": "سندويشات",
+    "venue": "res1",
+    "menu": true
+  },
+  {
+    "id": "m_1",
+    "name": "وجبة كريسبي / اسكالوب / سبايسي",
+    "price": "65000",
+    "description": "وجبة تتضمن البطاطا والمقبلات",
+    "category": "وجبات",
+    "venue": "res1",
+    "menu": true
+  },
+  {
+    "id": "m_2",
+    "name": "وجبة سوبريم / زنجر / كنتاكي / مشكل",
+    "price": "75000",
+    "description": "وجبة كاملة",
+    "category": "وجبات",
+    "venue": "res1",
+    "menu": true
+  },
+  {
+    "id": "m_3",
+    "name": "وجبة فاهيتا / مكسيكانو / فرانشيسكو",
+    "price": "75000",
+    "description": "وجبة كاملة",
+    "category": "وجبات",
+    "venue": "res1",
+    "menu": true
+  },
+  {
+    "id": "m_4",
+    "name": "وجبة طوشكا / سجق",
+    "price": "75000",
+    "description": "وجبة كاملة",
+    "category": "وجبات",
+    "venue": "res1",
+    "menu": true
+  },
+  {
+    "id": "m_5",
+    "name": "شرحات / شيش مطفاية",
+    "price": "60000",
+    "description": "وجبة شرحات أو شيش مطفاية",
+    "category": "وجبات",
+    "venue": "res1",
+    "menu": true
+  },
+  {
+    "id": "m_6",
+    "name": "شرحات / شيش مع جبنة",
+    "price": "65000",
+    "description": "وجبة شرحات أو شيش مع جبنة",
+    "category": "وجبات",
+    "venue": "res1",
+    "menu": true
+  },
+  {
+    "id": "m_7",
+    "name": "وجبات رياضية (دايت)",
+    "description": "200غ / 300غ بروتين",
+    "category": "وجبات",
+    "venue": "res1",
+    "menu": true,
+    "variants": [
+      {
+        "name": "200 غرام",
+        "price": "40000"
+      },
+      {
+        "name": "300 غرام",
+        "price": "55000"
+      }
+    ]
+  },
+  {
+    "id": "m_8",
+    "name": "دييغو كريسبي (دبل)",
+    "price": "45000",
+    "description": "وجبة دبل كريسبي",
+    "category": "وجبات",
+    "venue": "res1",
+    "menu": true
+  },
+  {
+    "id": "m_9",
+    "name": "دييغو دجاج (دبل)",
+    "price": "45000",
+    "description": "وجبة دبل دجاج",
+    "category": "وجبات",
+    "venue": "res1",
+    "menu": true
+  },
+  {
+    "id": "m_10",
+    "name": "كوردون بلو",
+    "price": "75000",
+    "description": "وجبة كوردون بلو",
+    "category": "وجبات",
+    "venue": "res1",
+    "menu": true
+  },
+  {
+    "id": "m_11",
+    "name": "وجبات حسب الطلب",
+    "price": "+333",
+    "description": "تجهيز وجبات خاصة",
+    "category": "وجبات",
+    "venue": "res1",
+    "menu": true,
+    "ismenu": false
+  },
+  {
+    "id": "pz_1",
     "name": "بيتزا خضار",
-    "description": "فليفلة، فطر، زيتون، ذرة، جبنة",
+    "description": "بيتزا خضار",
     "category": "بيتزا",
     "venue": "res1",
     "menu": true,
     "variants": [
-      { "name": "صغير", "price": "2000" },
-      { "name": "وسط", "price": "3000" },
-      { "name": "عائلي", "price": "5000" }
+      {
+        "name": "صغير",
+        "price": "25000"
+      },
+      {
+        "name": "وسط",
+        "price": "35000"
+      },
+      {
+        "name": "عائلي",
+        "price": "50000"
+      }
     ]
   },
   {
-    "id": "p2",
-    "name": "بيتزا خضار أطراف جبنة",
-    "description": "بيتزا خضار محشية الأطراف بالجبنة",
+    "id": "pz_2",
+    "name": "بيتزا خضار (أطراف جبنة)",
+    "description": "بيتزا خضار مع أطراف محشية جبنة",
     "category": "بيتزا",
     "venue": "res1",
     "menu": true,
     "variants": [
-      { "name": "صغير", "price": "2500" },
-      { "name": "وسط", "price": "4000" },
-      { "name": "عائلي", "price": "6000" }
+      {
+        "name": "صغير",
+        "price": "30000"
+      },
+      {
+        "name": "وسط",
+        "price": "40000"
+      },
+      {
+        "name": "عائلي",
+        "price": "60000"
+      }
     ]
   },
   {
-    "id": "p3",
-    "name": "بيتزا مارغريتا",
-    "description": "صلصة طماطم وجبنة موزاريلا غنية",
+    "id": "pz_3",
+    "name": "مارغريتا",
+    "description": "بيتزا جبنة وصلصة",
     "category": "بيتزا",
     "venue": "res1",
     "menu": true,
     "variants": [
-      { "name": "صغير", "price": "1500" },
-      { "name": "وسط", "price": "2500" },
-      { "name": "عائلي", "price": "4500" }
+      {
+        "name": "صغير",
+        "price": "22000"
+      },
+      {
+        "name": "وسط",
+        "price": "32000"
+      },
+      {
+        "name": "عائلي",
+        "price": "45000"
+      }
     ]
   },
   {
-    "id": "p333",
-    "name": "بيتزا مارغريتا أطراف جبنة",
-    "description": "بيتزا مارغريتا محشية الأطراف بالجبنة",
+    "id": "pz_4",
+    "name": "بيتزا لحومات",
+    "description": "ببروني، حبش، سجق، سلامي، شيش، أو كريسبي",
     "category": "بيتزا",
     "venue": "res1",
     "menu": true,
     "variants": [
-      { "name": "صغير", "price": "2500" },
-      { "name": "وسط", "price": "4000" },
-      { "name": "عائلي", "price": "6000" }
+      {
+        "name": "صغير",
+        "price": "30000"
+      },
+      {
+        "name": "وسط",
+        "price": "45000"
+      },
+      {
+        "name": "عائلي",
+        "price": "65000"
+      }
     ]
   },
   {
-    "id": "p4",
-    "name": "بيتزا اللحوم",
-    "description": "ببروني، سجق، أو سلامي مع الجبنة",
+    "id": "pz_5",
+    "name": "بيتزا لحومات (أطراف جبنة)",
+    "description": "لحومات مع أطراف محشية جبنة",
     "category": "بيتزا",
     "venue": "res1",
     "menu": true,
     "variants": [
-      { "name": "صغير", "price": "2500" },
-      { "name": "وسط", "price": "3500" },
-      { "name": "عائلي", "price": "5500" }
+      {
+        "name": "صغير",
+        "price": "35000"
+      },
+      {
+        "name": "وسط",
+        "price": "50000"
+      },
+      {
+        "name": "عائلي",
+        "price": "70000"
+      }
     ]
   },
   {
-    "id": "p444",
-    "name": "بيتزا اللحوم أطراف جبنة",
-    "description": "بيتزا اللحوم محشية الأطراف بالجبنة",
+    "id": "pz_6",
+    "name": "أوريغانو بالعجين",
+    "description": "منقوشة أوريغانو",
     "category": "بيتزا",
     "venue": "res1",
     "menu": true,
     "variants": [
-      { "name": "صغير", "price": "2500" },
-      { "name": "وسط", "price": "4000" },
-      { "name": "عائلي", "price": "6000" }
-    ]
-  },
-  {
-    "id": "m1",
-    "name": "وجبة كرسبي",
-    "price": "4000",
-    "description": "قطع كرسبي، بطاطا، ثوم، كولسلو، خبز",
-    "category": "وجبات",
-    "venue": "res1",
-    "ismenu": true,
-    "menu": true
-  },
-  {
-    "id": "m2",
-    "name": "وجبة سكالوب",
-    "price": "4000",
-    "description": "سكالوب دجاج، بطاطا، مقبلات",
-    "category": "وجبات",
-    "venue": "res1",
-    "ismenu": true,
-    "menu": true
-  },
-  {
-    "id": "m3",
-    "name": "وجبة سبايسي",
-    "price": "4200",
-    "description": "وجبة دجاج حار مع الاضافات",
-    "category": "وجبات",
-    "venue": "res1",
-    "ismenu": true,
-    "menu": true
-  },
-  {
-    "id": "m4",
-    "name": "وجبة شاورما عربي",
-    "price": "3500",
-    "description": "سندويش مقطع بخبز الصاج مع ثوم ومخلل وبطاطا",
-    "category": "وجبات",
-    "venue": "res1",
-    "ismenu": true,
-    "menu": true
-  },
-  {
-    "id": "m5",
-    "name": "وجبة مكسيكانو / فاهيتا",
-    "price": "4500",
-    "description": "وجبة كاملة تقدم مع الرز أو البطاطا",
-    "category": "وجبات",
-    "venue": "res1",
-    "ismenu": true,
-    "menu": true
-  },
-  {
-    "id": "m6",
-    "name": "طوشكا / مسخن",
-    "price": "3000",
-    "description": "خبز محشي لحم وجبنة (طوشكا) أو دجاج وسماق (مسخن)",
-    "category": "وجبات",
-    "venue": "res1",
-    "ismenu": true,
-    "menu": true
-  },
-  {
-    "id": "m7",
-    "name": "وجبة رياضية (دايت)",
-    "description": "صدر دجاج مشوي مع خضار سوتيه (عالي البروتين)",
-    "category": "وجبات",
-    "venue": "res1",
-    "menu": true,
-    "variants": [
-      { "name": "200g", "price": "2500" },
-      { "name": "300g", "price": "3500" }
+      {
+        "name": "وسط",
+        "price": "15000"
+      },
+      {
+        "name": "عائلي",
+        "price": "25000"
+      }
     ]
   },
   {
@@ -338,8 +507,6 @@
     "venue": "res1",
     "menu": true
   },
-
-  
   {
     "id": "res2_1",
     "name": "بروستد دجاج",
@@ -348,8 +515,14 @@
     "venue": "res2",
     "menu": true,
     "variants": [
-      { "name": "نصف فروج", "price": "12000" },
-      { "name": "فروج كامل", "price": "22000" }
+      {
+        "name": "نصف فروج",
+        "price": "12000"
+      },
+      {
+        "name": "فروج كامل",
+        "price": "22000"
+      }
     ]
   },
   {
@@ -370,31 +543,615 @@
     "venue": "res2",
     "menu": true
   },
-
-
   {
-    "id": "cafe_1",
-    "name": "أركيلة (شيشة)",
-    "description": "أراكيل فاخرة (معسل تفاحتين، ليمون ونعناع، عنب)",
-    "category": "أراكيل",
+    "id": "cf_h1",
+    "name": "شاي احمر",
+    "category": "مشاريب ساخنة",
     "venue": "cafe",
     "menu": true,
-    "variants": [
-      { "name": "عادي", "price": "3000" },
-      { "name": "سبيشال", "price": "4500" }
-    ]
+    "price": "3000"
   },
   {
-    "id": "cafe_2",
-    "name": "ميلك شيك",
-    "description": "ميلك شيك بارد مع الكريمة",
-    "category": "مشروبات باردة",
+    "id": "cf_h2",
+    "name": "شاي احمر قرفة",
+    "category": "مشاريب ساخنة",
     "venue": "cafe",
     "menu": true,
-    "variants": [
-      { "name": "شوكولا", "price": "2500" },
-      { "name": "فريز", "price": "2500" },
-      { "name": "فانيلا", "price": "2500" }
-    ]
+    "price": "3000"
+  },
+  {
+    "id": "cf_h3",
+    "name": "شاي احمر قرفة وزنجبيل",
+    "category": "مشاريب ساخنة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "3500"
+  },
+  {
+    "id": "cf_h4",
+    "name": "شاي اخضر ليمون",
+    "category": "مشاريب ساخنة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "3000"
+  },
+  {
+    "id": "cf_h5",
+    "name": "شاي اخضر نعنع",
+    "category": "مشاريب ساخنة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "3000"
+  },
+  {
+    "id": "cf_h6",
+    "name": "شاي اخضر قرفة وزنجبيل",
+    "category": "مشاريب ساخنة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "3500"
+  },
+  {
+    "id": "cf_h7",
+    "name": "شاي اخضر",
+    "category": "مشاريب ساخنة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "3000"
+  },
+  {
+    "id": "cf_h8",
+    "name": "زهورات مشكلة",
+    "category": "مشاريب ساخنة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "3000"
+  },
+  {
+    "id": "cf_h9",
+    "name": "كمون ليمون",
+    "category": "مشاريب ساخنة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "3000"
+  },
+  {
+    "id": "cf_h10",
+    "name": "كابتشينو",
+    "category": "مشاريب ساخنة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "4000"
+  },
+  {
+    "id": "cf_h11",
+    "name": "كابتشينو دايت",
+    "category": "مشاريب ساخنة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "4500"
+  },
+  {
+    "id": "cf_h12",
+    "name": "هوت شوكليت",
+    "category": "مشاريب ساخنة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "4000"
+  },
+  {
+    "id": "cf_h13",
+    "name": "ميلو",
+    "category": "مشاريب ساخنة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "4000"
+  },
+  {
+    "id": "cf_h14",
+    "name": "3بواحد",
+    "category": "مشاريب ساخنة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "3500"
+  },
+  {
+    "id": "cf_h15",
+    "name": "2بواحد",
+    "category": "مشاريب ساخنة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "3500"
+  },
+  {
+    "id": "cf_h16",
+    "name": "نسكافيه بلاك",
+    "category": "مشاريب ساخنة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "3500"
+  },
+  {
+    "id": "cf_h17",
+    "name": "نسكافيه جولد",
+    "category": "مشاريب ساخنة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "4000"
+  },
+  {
+    "id": "cf_h18",
+    "name": "نسكافيه بالحليب",
+    "category": "مشاريب ساخنة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "4000"
+  },
+  {
+    "id": "cf_h19",
+    "name": "قهوة",
+    "category": "مشاريب ساخنة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "3000"
+  },
+  {
+    "id": "cf_h20",
+    "name": "متة",
+    "category": "مشاريب ساخنة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "2500"
+  },
+  {
+    "id": "cf_h21",
+    "name": "متة بحليب",
+    "category": "مشاريب ساخنة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "3500"
+  },
+  {
+    "id": "cf_sn1",
+    "name": "موالح عادية",
+    "category": "موالح",
+    "venue": "cafe",
+    "menu": true,
+    "price": "3000"
+  },
+  {
+    "id": "cf_sn2",
+    "name": "موالح اكسترا",
+    "category": "موالح",
+    "venue": "cafe",
+    "menu": true,
+    "price": "5000"
+  },
+  {
+    "id": "cf_sn3",
+    "name": "شيبس ونقاشات",
+    "category": "موالح",
+    "venue": "cafe",
+    "menu": true,
+    "price": "3000"
+  },
+  {
+    "id": "cf_cd1",
+    "name": "عصائر معلبة",
+    "description": "برتقال - برتقال وجزر - اناناس - مانجو",
+    "category": "مشاريب باردة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "3000"
+  },
+  {
+    "id": "cf_cd2",
+    "name": "بيبسي بلاستيك طبوش",
+    "category": "مشاريب باردة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "3500"
+  },
+  {
+    "id": "cf_cd3",
+    "name": "سفن بلاستيك طبوش",
+    "category": "مشاريب باردة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "3500"
+  },
+  {
+    "id": "cf_cd4",
+    "name": "ميراندا برتقال بلاستيك طبوش",
+    "category": "مشاريب باردة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "3500"
+  },
+  {
+    "id": "cf_cd5",
+    "name": "ميراندا تفاح بلاستيك طبوش",
+    "category": "مشاريب باردة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "3500"
+  },
+  {
+    "id": "cf_cd6",
+    "name": "بيبسي تنك مشكل",
+    "category": "مشاريب باردة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "4500"
+  },
+  {
+    "id": "cf_cd7",
+    "name": "كوكاكولا انك مشكل",
+    "category": "مشاريب باردة",
+    "venue": "cafe",
+    "menu": true,
+    "price": "4500"
+  },
+  {
+    "id": "cf_fr1",
+    "name": "مانجو فريش",
+    "category": "عصائر فريش استوائية موسمية",
+    "venue": "cafe",
+    "menu": true,
+    "price": "8000"
+  },
+  {
+    "id": "cf_fr2",
+    "name": "دراغون فروت فريش",
+    "category": "عصائر فريش استوائية موسمية",
+    "venue": "cafe",
+    "menu": true,
+    "price": "9000"
+  },
+  {
+    "id": "cf_fr3",
+    "name": "كيوي فريش",
+    "category": "عصائر فريش استوائية موسمية",
+    "venue": "cafe",
+    "menu": true,
+    "price": "7000"
+  },
+  {
+    "id": "cf_fr4",
+    "name": "فريز فريش",
+    "category": "عصائر فريش استوائية موسمية",
+    "venue": "cafe",
+    "menu": true,
+    "price": "6000"
+  },
+  {
+    "id": "cf_fr5",
+    "name": "ليمون فريش",
+    "category": "عصائر فريش استوائية موسمية",
+    "venue": "cafe",
+    "menu": true,
+    "price": "5000"
+  },
+  {
+    "id": "cf_fr6",
+    "name": "دراق فريش",
+    "category": "عصائر فريش استوائية موسمية",
+    "venue": "cafe",
+    "menu": true,
+    "price": "6000"
+  },
+  {
+    "id": "cf_fr7",
+    "name": "رمان فريش",
+    "category": "عصائر فريش استوائية موسمية",
+    "venue": "cafe",
+    "menu": true,
+    "price": "6000"
+  },
+  {
+    "id": "cf_fr8",
+    "name": "برتقال فريش",
+    "category": "عصائر فريش استوائية موسمية",
+    "venue": "cafe",
+    "menu": true,
+    "price": "5000"
+  },
+  {
+    "id": "cf_fr9",
+    "name": "اناناس فريش",
+    "category": "عصائر فريش استوائية موسمية",
+    "venue": "cafe",
+    "menu": true,
+    "price": "7000"
+  },
+  {
+    "id": "cf_fr10",
+    "name": "بولو ليمون ونعنع",
+    "category": "عصائر فريش استوائية موسمية",
+    "venue": "cafe",
+    "menu": true,
+    "price": "5000"
+  },
+  {
+    "id": "cf_ck1",
+    "name": "موز حليب",
+    "category": "كوكتيلات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "5000"
+  },
+  {
+    "id": "cf_ck2",
+    "name": "موز حليب عسل",
+    "category": "كوكتيلات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "6000"
+  },
+  {
+    "id": "cf_ck3",
+    "name": "موز حليب فريز",
+    "category": "كوكتيلات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "6000"
+  },
+  {
+    "id": "cf_ck4",
+    "name": "موز حليب شوكلا",
+    "category": "كوكتيلات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "6000"
+  },
+  {
+    "id": "cf_ck5",
+    "name": "موز حليب مانجو",
+    "category": "كوكتيلات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "7000"
+  },
+  {
+    "id": "cf_ck6",
+    "name": "موز حليب دراغون",
+    "category": "كوكتيلات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "8000"
+  },
+  {
+    "id": "cf_ck7",
+    "name": "فواكه مشكل",
+    "category": "كوكتيلات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "7000"
+  },
+  {
+    "id": "cf_ck8",
+    "name": "افوكادو حليب مع المكسرات",
+    "category": "كوكتيلات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "9000"
+  },
+  {
+    "id": "cf_ck9",
+    "name": "افوكادو حليب شوكلا مع المكسرات",
+    "category": "كوكتيلات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "10000"
+  },
+  {
+    "id": "cf_ck10",
+    "name": "سيشل فواكه",
+    "category": "كوكتيلات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "8000"
+  },
+  {
+    "id": "cf_ck11",
+    "name": "سيشل فواكه مع كريما وشوكلا",
+    "category": "كوكتيلات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "9500"
+  },
+  {
+    "id": "cf_ck12",
+    "name": "فخفخينا فواكه",
+    "category": "كوكتيلات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "8000"
+  },
+  {
+    "id": "cf_ck13",
+    "name": "فريز موز",
+    "category": "كوكتيلات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "6000"
+  },
+  {
+    "id": "cf_ck14",
+    "name": "حليب شوكلا",
+    "category": "كوكتيلات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "5000"
+  },
+  {
+    "id": "cf_ck15",
+    "name": "حليب فريز",
+    "category": "كوكتيلات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "5000"
+  },
+  {
+    "id": "cf_ck16",
+    "name": "ايس كوفي مشكل",
+    "category": "كوكتيلات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "6000"
+  },
+  {
+    "id": "cf_ck17",
+    "name": "ايس شوكليت",
+    "category": "كوكتيلات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "6000"
+  },
+  {
+    "id": "cf_ck18",
+    "name": "اوريو ميلك",
+    "category": "كوكتيلات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "6500"
+  },
+  {
+    "id": "cf_ck19",
+    "name": "سنركز ميلك",
+    "category": "كوكتيلات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "6500"
+  },
+  {
+    "id": "cf_ck20",
+    "name": "مارس ميلك",
+    "category": "كوكتيلات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "6500"
+  },
+  {
+    "id": "cf_sw1",
+    "name": "سلطة فواكه عادية",
+    "category": "سلطات فواكه وحلويات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "6000"
+  },
+  {
+    "id": "cf_sw2",
+    "name": "سلطة فواكه استوائية موسمية",
+    "category": "سلطات فواكه وحلويات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "8000"
+  },
+  {
+    "id": "cf_sw3",
+    "name": "سلطة فواكة عائلي",
+    "category": "سلطات فواكه وحلويات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "15000"
+  },
+  {
+    "id": "cf_sw4",
+    "name": "غوفر",
+    "category": "سلطات فواكه وحلويات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "4000"
+  },
+  {
+    "id": "cf_sw5",
+    "name": "غوفر فواكه",
+    "category": "سلطات فواكه وحلويات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "6000"
+  },
+  {
+    "id": "cf_sw6",
+    "name": "غوفر بوظة",
+    "category": "سلطات فواكه وحلويات",
+    "venue": "cafe",
+    "menu": true,
+    "price": "7000"
+  },
+  {
+    "id": "cf_sh1",
+    "name": "تفاحتين نخلة ml",
+    "category": "اراكيل",
+    "venue": "cafe",
+    "menu": true,
+    "price": "5000"
+  },
+  {
+    "id": "cf_sh2",
+    "name": "تفاحتين فاخر",
+    "category": "اراكيل",
+    "venue": "cafe",
+    "menu": true,
+    "price": "6000"
+  },
+  {
+    "id": "cf_sh3",
+    "name": "تفاحتين مزايا",
+    "category": "اراكيل",
+    "venue": "cafe",
+    "menu": true,
+    "price": "6000"
+  },
+  {
+    "id": "cf_sh4",
+    "name": "بولو",
+    "category": "اراكيل",
+    "venue": "cafe",
+    "menu": true,
+    "price": "5000"
+  },
+  {
+    "id": "cf_sh5",
+    "name": "علكة",
+    "category": "اراكيل",
+    "venue": "cafe",
+    "menu": true,
+    "price": "5000"
+  },
+  {
+    "id": "cf_sh6",
+    "name": "لوف",
+    "category": "اراكيل",
+    "venue": "cafe",
+    "menu": true,
+    "price": "5000"
+  },
+  {
+    "id": "cf_sh7",
+    "name": "عنب",
+    "category": "اراكيل",
+    "venue": "cafe",
+    "menu": true,
+    "price": "5000"
+  },
+  {
+    "id": "cf_sh8",
+    "name": "فخفخينا",
+    "category": "اراكيل",
+    "venue": "cafe",
+    "menu": true,
+    "price": "6000"
+  },
+  {
+    "id": "1766014221",
+    "name": "TEST",
+    "price": "555555",
+    "description": "TEST",
+    "category": "TEST",
+    "venue": "res1",
+    "ismenu": true,
+    "menu": true
   }
 ]
