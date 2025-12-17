@@ -32,6 +32,38 @@ body {
   border-bottom: 1px solid var(--border);
 }
 
+/* --- Venue Switcher --- */
+.venue-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 10px 5px;
+  background: var(--bg);
+}
+
+.venue-btn {
+  flex: 1; /* Makes them equal width */
+  background: white;
+  border: 1px solid #ddd;
+  padding: 12px 5px;
+  border-radius: 12px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.venue-btn.active {
+  background: var(--primary); /* Dark Color */
+  color: white;
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
 .brand-name {
   margin: 0;
   font-size: 28px;

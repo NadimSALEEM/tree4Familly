@@ -5,6 +5,7 @@
     "price": "2500",
     "description": "سندويش زنجر دجاج مقرمش حار",
     "category": "سندويشات",
+    "venue": "res1",
     "menu": true
   },
   {
@@ -13,6 +14,7 @@
     "price": "2500",
     "description": "سندويش سوبريم دجاج مع الجبنة والمدخن",
     "category": "سندويشات",
+    "venue": "res1",
     "menu": true
   },
   {
@@ -21,6 +23,7 @@
     "price": "2400",
     "description": "سندويش دجاج بخلطة كنتاكي الأصلية",
     "category": "سندويشات",
+    "venue": "res1",
     "menu": true
   },
   {
@@ -29,6 +32,7 @@
     "price": "2200",
     "description": "سندويش دجاج كرسبي مقرمش",
     "category": "سندويشات",
+    "venue": "res1",
     "menu": true
   },
   {
@@ -37,6 +41,7 @@
     "price": "2200",
     "description": "سندويش سكالوب دجاج بانيه",
     "category": "سندويشات",
+    "venue": "res1",
     "menu": true
   },
   {
@@ -45,6 +50,7 @@
     "price": "2300",
     "description": "سندويش دجاج حار خاص",
     "category": "سندويشات",
+    "venue": "res1",
     "menu": true
   },
   {
@@ -53,6 +59,7 @@
     "price": "2600",
     "description": "دجاج متبل مع الفلفل الملون والبصل",
     "category": "سندويشات",
+    "venue": "res1",
     "menu": true
   },
   {
@@ -61,6 +68,7 @@
     "price": "2600",
     "description": "دجاج مشوي مع الفطر والذرة والجبنة",
     "category": "سندويشات",
+    "venue": "res1",
     "menu": true
   },
   {
@@ -69,6 +77,7 @@
     "price": "2600",
     "description": "دجاج حار على الطريقة المكسيكية",
     "category": "سندويشات",
+    "venue": "res1",
     "menu": true
   },
   {
@@ -77,6 +86,7 @@
     "price": "2000",
     "description": "برغر دجاج مشوي مع شريحة جبنة",
     "category": "سندويشات",
+    "venue": "res1",
     "menu": true
   },
   {
@@ -85,6 +95,7 @@
     "price": "2200",
     "description": "برغر دجاج مميز مع بيض مقلي",
     "category": "سندويشات",
+    "venue": "res1",
     "menu": true
   },
   {
@@ -93,6 +104,7 @@
     "price": "2500",
     "description": "برغر لحم بلدي مع الجبنة",
     "category": "سندويشات",
+    "venue": "res1",
     "menu": true
   },
   {
@@ -101,6 +113,7 @@
     "price": "2700",
     "description": "برغر لحم دسم مع البيض",
     "category": "سندويشات",
+    "venue": "res1",
     "menu": true
   },
   {
@@ -109,6 +122,7 @@
     "price": "3000",
     "description": "اختر اضافاتك الخاصة",
     "category": "سندويشات",
+    "venue": "res1",
     "menu": true
   },
   {
@@ -117,6 +131,7 @@
     "price": "1000",
     "description": "بطاطا مقلية ذهبية مقرمشة",
     "category": "سندويشات",
+    "venue": "res1",
     "menu": true
   },
   {
@@ -125,6 +140,7 @@
     "price": "2400",
     "description": "دجاج بصوص العسل والخردل",
     "category": "سندويشات",
+    "venue": "res1",
     "menu": true
   },
   {
@@ -133,6 +149,7 @@
     "price": "2500",
     "description": "قطع شيش طاووق مشوية",
     "category": "سندويشات",
+    "venue": "res1",
     "menu": true
   },
   {
@@ -140,6 +157,7 @@
     "name": "بيتزا خضار",
     "description": "فليفلة، فطر، زيتون، ذرة، جبنة",
     "category": "بيتزا",
+    "venue": "res1",
     "menu": true,
     "variants": [
       { "name": "صغير", "price": "2000" },
@@ -152,6 +170,7 @@
     "name": "بيتزا خضار أطراف جبنة",
     "description": "بيتزا خضار محشية الأطراف بالجبنة",
     "category": "بيتزا",
+    "venue": "res1",
     "menu": true,
     "variants": [
       { "name": "صغير", "price": "2500" },
@@ -164,6 +183,7 @@
     "name": "بيتزا مارغريتا",
     "description": "صلصة طماطم وجبنة موزاريلا غنية",
     "category": "بيتزا",
+    "venue": "res1",
     "menu": true,
     "variants": [
       { "name": "صغير", "price": "1500" },
@@ -176,6 +196,7 @@
     "name": "بيتزا مارغريتا أطراف جبنة",
     "description": "بيتزا مارغريتا محشية الأطراف بالجبنة",
     "category": "بيتزا",
+    "venue": "res1",
     "menu": true,
     "variants": [
       { "name": "صغير", "price": "2500" },
@@ -188,6 +209,7 @@
     "name": "بيتزا اللحوم",
     "description": "ببروني، سجق، أو سلامي مع الجبنة",
     "category": "بيتزا",
+    "venue": "res1",
     "menu": true,
     "variants": [
       { "name": "صغير", "price": "2500" },
@@ -200,6 +222,7 @@
     "name": "بيتزا اللحوم أطراف جبنة",
     "description": "بيتزا اللحوم محشية الأطراف بالجبنة",
     "category": "بيتزا",
+    "venue": "res1",
     "menu": true,
     "variants": [
       { "name": "صغير", "price": "2500" },
@@ -213,6 +236,7 @@
     "price": "4000",
     "description": "قطع كرسبي، بطاطا، ثوم، كولسلو، خبز",
     "category": "وجبات",
+    "venue": "res1",
     "ismenu": true,
     "menu": true
   },
@@ -222,6 +246,7 @@
     "price": "4000",
     "description": "سكالوب دجاج، بطاطا، مقبلات",
     "category": "وجبات",
+    "venue": "res1",
     "ismenu": true,
     "menu": true
   },
@@ -231,6 +256,7 @@
     "price": "4200",
     "description": "وجبة دجاج حار مع الاضافات",
     "category": "وجبات",
+    "venue": "res1",
     "ismenu": true,
     "menu": true
   },
@@ -240,6 +266,7 @@
     "price": "3500",
     "description": "سندويش مقطع بخبز الصاج مع ثوم ومخلل وبطاطا",
     "category": "وجبات",
+    "venue": "res1",
     "ismenu": true,
     "menu": true
   },
@@ -249,6 +276,7 @@
     "price": "4500",
     "description": "وجبة كاملة تقدم مع الرز أو البطاطا",
     "category": "وجبات",
+    "venue": "res1",
     "ismenu": true,
     "menu": true
   },
@@ -258,6 +286,7 @@
     "price": "3000",
     "description": "خبز محشي لحم وجبنة (طوشكا) أو دجاج وسماق (مسخن)",
     "category": "وجبات",
+    "venue": "res1",
     "ismenu": true,
     "menu": true
   },
@@ -266,6 +295,7 @@
     "name": "وجبة رياضية (دايت)",
     "description": "صدر دجاج مشوي مع خضار سوتيه (عالي البروتين)",
     "category": "وجبات",
+    "venue": "res1",
     "menu": true,
     "variants": [
       { "name": "200g", "price": "2500" },
@@ -278,6 +308,7 @@
     "price": "1000",
     "description": "كوكاكولا باردة منعشة",
     "category": "مشروبات",
+    "venue": "res1",
     "menu": true
   },
   {
@@ -286,6 +317,7 @@
     "price": "1000",
     "description": "سفن أب ليمون",
     "category": "مشروبات",
+    "venue": "res1",
     "menu": true
   },
   {
@@ -294,6 +326,7 @@
     "price": "1000",
     "description": "فانتا برتقال",
     "category": "مشروبات",
+    "venue": "res1",
     "menu": true
   },
   {
@@ -302,6 +335,66 @@
     "price": "800",
     "description": "لبن عيران طازج",
     "category": "مشروبات",
+    "venue": "res1",
     "menu": true
+  },
+
+  
+  {
+    "id": "res2_1",
+    "name": "بروستد دجاج",
+    "description": "دجاج مقلي مقرمش مع الثوم والبطاطا",
+    "category": "وجبات غربية",
+    "venue": "res2",
+    "menu": true,
+    "variants": [
+      { "name": "نصف فروج", "price": "12000" },
+      { "name": "فروج كامل", "price": "22000" }
+    ]
+  },
+  {
+    "id": "res2_2",
+    "name": "صحن رز",
+    "price": "1500",
+    "description": "رز أبيض مطبوخ",
+    "category": "مقبلات",
+    "venue": "res2",
+    "menu": true
+  },
+  {
+    "id": "res2_3",
+    "name": "بطاطا مقلية",
+    "price": "1200",
+    "description": "صحن بطاطا مقلية كبير",
+    "category": "مقبلات",
+    "venue": "res2",
+    "menu": true
+  },
+
+
+  {
+    "id": "cafe_1",
+    "name": "أركيلة (شيشة)",
+    "description": "أراكيل فاخرة (معسل تفاحتين، ليمون ونعناع، عنب)",
+    "category": "أراكيل",
+    "venue": "cafe",
+    "menu": true,
+    "variants": [
+      { "name": "عادي", "price": "3000" },
+      { "name": "سبيشال", "price": "4500" }
+    ]
+  },
+  {
+    "id": "cafe_2",
+    "name": "ميلك شيك",
+    "description": "ميلك شيك بارد مع الكريمة",
+    "category": "مشروبات باردة",
+    "venue": "cafe",
+    "menu": true,
+    "variants": [
+      { "name": "شوكولا", "price": "2500" },
+      { "name": "فريز", "price": "2500" },
+      { "name": "فانيلا", "price": "2500" }
+    ]
   }
 ]
