@@ -271,5 +271,37 @@
       { "name": "200g", "price": "2500" },
       { "name": "300g", "price": "3500" }
     ]
+  },
+  {
+    "id": "d1",
+    "name": "كولا",
+    "price": "1000",
+    "description": "كوكاكولا باردة منعشة",
+    "category": "مشروبات",
+    "menu": true
+  },
+  {
+    "id": "d2",
+    "name": "سفن أب",
+    "price": "1000",
+    "description": "سفن أب ليمون",
+    "category": "مشروبات",
+    "menu": true
+  },
+  {
+    "id": "d3",
+    "name": "فانتا",
+    "price": "1000",
+    "description": "فانتا برتقال",
+    "category": "مشروبات",
+    "menu": true
+  },
+  {
+    "id": "d4",
+    "name": "عيران",
+    "price": "800",
+    "description": "لبن عيران طازج",
+    "category": "مشروبات",
+    "menu": true
   }
 ]

@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
 
 :root {
-  --primary: #212529;
-  --accent: #198754; /* Green */
-  --bg: #f8f9fa;
-  --white: #f9f3f3;
-  --badge-bg: #ffc107; /* Yellow/Orange for Menu Badge */
-  --border: #e9ecef;
+  --primary: #1c1c1c;
+  --accent: #198754;      /* Your green stays */
+  --bg: #fff3cd;
+  --white: #ffffff;
+  --badge-bg: #e4f455;    /* Strong orange */
+  --border: #ffd166;
   --radius: 16px;
+  --head: #ffe08a;
 }
+
+
 
 * { box-sizing: border-box; }
 
@@ -23,7 +26,7 @@ body {
 
 /* --- Header Area --- */
 .hero {
-  background: var(--white);
+  background: var(--head);
   padding: 30px 20px 20px;
   text-align: center;
   border-bottom: 1px solid var(--border);
@@ -198,4 +201,113 @@ body {
   font-size: 14px;
   font-weight: 700;
   color: var(--accent);
+}
+
+/* --- Footer Updates --- */
+
+/* Wrapper for the main buttons (WhatsApp/Facebook) */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+  margin-bottom: 15px;
+}
+
+/* Wrapper for the phone numbers */
+.contact-links-secondary {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+/* Common Button Style */
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  transition: transform 0.2s;
+  min-width: 140px; /* Ensures buttons are same size */
+}
+
+.contact-btn:active {
+  transform: scale(0.95);
+}
+
+/* WhatsApp (Green) */
+.contact-btn.whatsapp {
+  background-color: #e9f7ef;
+  color: #198754;
+  border: 1px solid #d1e7dd;
+}
+
+/* Facebook (Blue) - NEW */
+.contact-btn.facebook {
+  background-color: #e7f5ff;
+  color: #0d6efd;
+  border: 1px solid #cce5ff;
+}
+
+/* Phone Numbers (Gray) */
+.contact-btn.phone {
+  background-color: #f8f9fa;
+  color: #495057;
+  border: 1px solid #dee2e6;
+  font-family: sans-serif; /* Makes numbers easier to read */
+}
+
+/* --- Unique Footer Signature --- */
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #888;
+  letter-spacing: 0.5px;
+}
+
+.dev-name {
+  font-weight: 900; /* Extra Bold */
+  
+  /* The Colorful Gradient Magic */
+  background: linear-gradient(
+    45deg, 
+    #ff0000, 
+    #ff7300, 
+    #fffb00, 
+    #48ff00, 
+    #00ffd5, 
+    #002bff, 
+    #7a00ff, 
+    #ff00c8, 
+    #ff0000
+  );
+  background-size: 400%;
+  
+  /* Clips the background to the text */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  
+  /* The Moving Animation */
+  animation: glowing-trace 20s linear infinite;
+  
+  display: inline-block;
+  padding: 2px 5px;
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5); /* Soft Glow */
+}
+
+/* Animation Keyframes */
+@keyframes glowing-trace {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }

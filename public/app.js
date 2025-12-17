@@ -2,10 +2,91 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("menu-container");
   const navContainer = document.getElementById("nav-list");
 
-  // Helper: Format Price
+  // --- 1. CATEGORY ICONS (For the Headers) ---
+  const categoryIcons = {
+    "سندويشات": "🥪",
+    "بيتزا": "🍕",
+    "وجبات": "🍽️",
+    "مشروبات غازية": "🥤",
+    "حلويات": "🍰",
+    "مقبلات": "🍟",
+    "default": "🍴"
+  };
+
+
+  const itemKeywords = {
+    // --- 🧀 The Cheesy & Special Ones ---
+    "تشيز": "🍔🧀",           
+    "أطراف جبنة": "🍕🧀✨",    
+    "جبن": "🧀",
+    "بيض": "🍔🍳",            
+    "ماسترد": "🍯🍗",         
+
+    // --- 🍕 Pizzas ---
+    "خضار": "🍕🥦",           
+    "مارغريتا": "🍕🌿",       
+    "ببروني": "🍕🥓",         
+    "لحوم": "🍕🥩",           
+    "بيتزا": "🍕",            
+
+    // --- 🔥 Spicy & Sandwiches ---
+    "زنجر": "🍗🔥",           
+    "سبايسي": "🌶️🍗",         
+    "مكسيكانو": "🌮🔥",       
+    "فاهيتا": "🌮🫑",         
+    "فرانسيسكو": "🥖🍄",      
+    "سوبريم": "🌯🧀",         
+    "شيش": "🍢",              
+    "طوشكا": "🥙🥩",          
+    "مسخن": "🥙🧅",           
+    "شاورما": "🌯🔥",         
+    "shawarma": "🌯🔥",
+
+    // --- 🍗 Fried Chicken ---
+    "كنتاكي": "🍗✨",
+    "كرسبي": "🥖🍗",
+    "سكالوب": "🍗🥨",
+    "برغر": "🍔",
+    "burger": "🍔",
+
+    // --- 🥔 Sides & Meals ---
+    "بطاطا": "🍟",
+    "fries": "🍟",
+    "وجبة": "🍽️",
+    "دايت": "🥗💪",           
+    "رياضية": "🏋️🥗",         
+
+    // --- 🥤 Drinks (UPDATED HERE) ---
+    "سفن": "🍋🥤",            // 7-Up
+    "فانتا": "🍊🥤",          // Fanta
+    "عيران": "🥛🧂",          // Ayran (Yogurt)
+    "كولا": "🥤🧊",
+    "بيبسي": "🥤🧊",
+    "عصير": "🍹🍊",
+    "ماء": "💧",
+    "مياه": "💧",
+
+    // --- 🍰 Desserts ---
+    "كنافة": "🍮🍯",
+    "وافل": "🧇🍫",
+    "ايس": "🍦",
+    "بوظة": "🍦"
+  };
+
+  // Helper: Find the best icon for an item
+  const getItemIcon = (name, category) => {
+    const n = name.toLowerCase();
+    // Check specific keywords first
+    for (const [key, icon] of Object.entries(itemKeywords)) {
+      if (n.includes(key)) return icon;
+    }
+    // If no keyword matches, use the Category icon
+    return categoryIcons[category] || categoryIcons["default"];
+  };
+
   const formatPrice = (p) => {
     const n = Number(p);
-    if (Number.isFinite(n)) return `${n.toFixed(0)} ل.س`; // Assuming Syrian Lira based on context
+    if (Number.isFinite(n)) return `${n.toFixed(0)} ل.س`; 
     return `${p}`;
   };
 
@@ -45,25 +126,29 @@ document.addEventListener("DOMContentLoaded", () => {
     const sortedCategories = [...byCategory.entries()].sort((a, b) => a[0].localeCompare(b[0]));
 
     sortedCategories.forEach(([cat, items]) => {
+      // 1. Category Icon
+      const catIcon = categoryIcons[cat] || categoryIcons["default"];
+
       // Nav Link
       const navLink = document.createElement("a");
       navLink.className = "nav-pill";
       navLink.href = `#cat-${esc(cat.replace(/\s+/g, '-'))}`;
-      navLink.textContent = cat;
+      navLink.innerHTML = `<span>${catIcon}</span> ${esc(cat)}`;
       navContainer.appendChild(navLink);
 
-      // Section
+      // Section Header
       const section = document.createElement("section");
       section.className = "category-section";
       section.id = `cat-${esc(cat.replace(/\s+/g, '-'))}`;
-      section.innerHTML = `<h2 class="category-title">${esc(cat)}</h2>`;
+      section.innerHTML = `<h2 class="category-title"><span>${catIcon}</span> ${esc(cat)}</h2>`;
 
       items.forEach((it) => {
+        // 2. Item Icon (Smart Detection)
+        const itemIcon = getItemIcon(it.name, cat);
+
         let priceHtml = "";
         
-        // CHECK: Does it have variants (Sizes) or just one price?
         if (it.variants && it.variants.length > 0) {
-            // Create a list of variants
             let variantsHtml = `<div class="variants-list">`;
             it.variants.forEach(v => {
                 variantsHtml += `
@@ -75,11 +160,9 @@ document.addEventListener("DOMContentLoaded", () => {
             variantsHtml += `</div>`;
             priceHtml = variantsHtml;
         } else {
-            // Regular single price
             priceHtml = `<div class="item-price">${formatPrice(it.price)}</div>`;
         }
 
-        // Check for Menu Badge (optional)
         let menuBadgeHtml = "";
         if (it.ismenu === true) {
             menuBadgeHtml = `<div class="menu-badge"><span>✨ متوفر كوجبة</span></div>`;
@@ -89,12 +172,14 @@ document.addEventListener("DOMContentLoaded", () => {
         card.className = "item-card";
         card.innerHTML = `
           <div class="card-top">
-            <h3 class="item-name">${esc(it.name)}</h3>
-            ${!it.variants ? priceHtml : ''} </div>
+            <h3 class="item-name">
+                <span style="margin-left:8px; font-size:1.2em;">${itemIcon}</span>
+                ${esc(it.name)}
+            </h3>
+            ${!it.variants ? priceHtml : ''}
+          </div>
           <p class="item-desc">${esc(it.description || "")}</p>
-          
           ${it.variants ? priceHtml : ''}
-          
           ${menuBadgeHtml}
         `;
         section.appendChild(card);
