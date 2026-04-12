@@ -2,75 +2,43 @@
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>Tree. 4 Seasons</title>
-    
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/theme.css" />
-
-    <script defer src="/__/firebase/12.7.0/firebase-app-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/init.js?useEmulator=false"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tree 4 Family | المنيو</title>
+    <meta
+      name="description"
+      content="منيو Tree 4 Family - تصفح الأصناف حسب المطعم أو الكافيتريا"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/themes.css" />
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
 
   <body>
-    
     <header class="hero">
-      <h1 class="brand-name">Tree 4. Familly</h1>
-      <p class="slogan">الاكل معنا.. الو معنى</p>
+      <p class="eyebrow"></p>
+      <h1 class="brand-name">Tree.4 </h1> <p class="slogan">Family</p>
+      <p class="brand-name">Menu</p>
     </header>
 
-    <div class="venue-tabs">
-        <button class="venue-btn active" onclick="switchVenue('res1')">🍽️ المطعم 1</button>
-        <button class="venue-btn" onclick="switchVenue('res2')">🍖 المطعم 2</button>
-        <button class="venue-btn" onclick="switchVenue('cafe')">☕ الكافيتريا</button>
-    </div>
+    <main class="page">
+      <nav class="category-nav" aria-label="تصنيفات المنيو">
+        <div class="category-nav-list" id="category-nav-list"></div>
+      </nav>
 
-    <nav class="nav-scroller">
-      <div class="nav-list" id="nav-list">
-        </div>
-    </nav>
+      <section class="status" id="status" role="status" aria-live="polite"></section>
 
-    <main class="container" id="menu-container">
-      <p class="loading">جاري تحضير المنيو...</p>
-</main>
+      <section class="menu-content" id="menu-content"></section>
+    </main>
 
     <footer class="footer">
-      <div class="footer-content">
-        <h3>تواصل معنا</h3>
-        
-        <div class="contact-links">
-          <a href="https://wa.me/963999999999" target="_blank" class="contact-btn whatsapp">
-            <span>واتساب</span>
-            <span class="icon">💬</span>
-          </a>
-
-          <a href="https://www.facebook.com/Tree4Familly" target="_blank" class="contact-btn facebook">
-            <span>فيسبوك</span>
-            <span class="icon">👍</span>
-          </a>
-        </div>
-
-        <div class="contact-links-secondary">
-          <a href="tel:+963999999999" class="contact-btn phone">
-            <span>0999 999 999</span>
-            <span class="icon">📞</span>
-          </a>
-          
-          <a href="tel:+963988888888" class="contact-btn phone">
-            <span>0988 888 888</span>
-            <span class="icon">📞</span>
-          </a>
-        </div>
-        
-        <div class="divider"></div>
-        
-        <p class="copyright">
-          تصميم وتطوير <span class="dev-name"> Tree 4. Familly</span>
-        </p>
-      </div>
+      <p>Tree 4 Family</p>
     </footer>
 
-    <script src="app.js"></script>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>
