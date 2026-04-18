@@ -28,6 +28,7 @@ function groupItemsByCategory(items) {
 }
 
 function createItemCard(item) {
+  const hasImage = Boolean(item.image);
   const imageMarkup = item.image
     ? `
       <div class="item-image">
@@ -54,7 +55,7 @@ function createItemCard(item) {
   const badgeMarkup = item.ismenu ? '<span class="menu-badge">عرض</span>' : "";
 
   return `
-    <article class="menu-item-card reveal">
+    <article class="menu-item-card reveal ${hasImage ? "has-image" : "no-image"}">
       ${imageMarkup}
       <div class="item-body">
         <div class="item-head">
