@@ -27,21 +27,20 @@ function parseVariants(rawVariants) {
   const value = sanitizeText(rawVariants);
   if (!value) return undefined;
 
-  try {
-    const parsed = JSON.parse(value);
-    if (!Array.isArray(parsed)) return undefined;
+  const cleaned = value
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .map((line) => {
+      const [name, price] = line.split("=");
+      return {
+        name: sanitizeText(name),
+        price: sanitizeText(price)
+      };
+    })
+    .filter((variant) => variant.name || variant.price);
 
-    const cleaned = parsed
-      .map((variant) => ({
-        name: sanitizeText(variant?.name),
-        price: sanitizeText(variant?.price)
-      }))
-      .filter((variant) => variant.name || variant.price);
-
-    return cleaned.length ? cleaned : undefined;
-  } catch {
-    return undefined;
-  }
+  return cleaned.length ? cleaned : undefined;
 }
 
 function readValue(row, headerMap, keys) {
