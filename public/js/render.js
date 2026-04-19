@@ -88,9 +88,9 @@ function createItemCard(item) {
           <h3 class="item-name">${escapeHTML(item.name)}</h3>
           ${badgeMarkup}
         </div>
+        ${item.description ? `<p class="item-description">${escapeHTML(item.description)}</p>` : ""}
         ${priceMarkup}
         ${variantsMarkup}
-        ${item.description ? `<p class="item-description">${escapeHTML(item.description)}</p>` : ""}
       </div>
     </article>
   `;
