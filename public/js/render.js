@@ -1,5 +1,6 @@
 let elements = null;
 let observer = null;
+const SECONDARY_CURRENCY_LABEL = "جديدة";
 
 function slugify(text) {
   return String(text || "")
@@ -16,6 +17,29 @@ function escapeHTML(value) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+}
+
+function toWesternDigits(value) {
+  return String(value || "")
+    .replace(/[٠-٩]/g, (digit) => String(digit.charCodeAt(0) - 1632))
+    .replace(/[۰-۹]/g, (digit) => String(digit.charCodeAt(0) - 1776));
+}
+
+function parsePriceNumber(priceText) {
+  const westernized = toWesternDigits(priceText);
+  const numericCandidate = westernized.replace(/[^\d.,-]/g, "").replace(/,/g, "");
+  if (!numericCandidate) return null;
+
+  const value = Number(numericCandidate);
+  return Number.isFinite(value) ? value : null;
+}
+
+function formatSecondaryPrice(priceText) {
+  const parsed = parsePriceNumber(priceText);
+  if (parsed === null) return "";
+
+  const converted = Math.floor(parsed / 100);
+  return ` / <span class="price-secondary"> ${escapeHTML(String(converted))} ${SECONDARY_CURRENCY_LABEL} </span>`;
 }
 
 function groupItemsByCategory(items) {
@@ -43,13 +67,15 @@ function createItemCard(item) {
           (variant) =>
             `<li class="variant-item"><span>${escapeHTML(variant.name)}</span><b>${escapeHTML(
               variant.price
-            )}</b></li>`
+            )}${formatSecondaryPrice(variant.price)}</b></li>`
         )
         .join("")}</ul>`
     : "";
 
   const priceMarkup = !variantsMarkup && item.price
-    ? `<p class="item-price">${escapeHTML(item.price)}</p>`
+    ? `<p class="item-price"><span class="price-primary">${escapeHTML(item.price)}</span>${formatSecondaryPrice(
+        item.price
+      )}</p>`
     : "";
 
   const badgeMarkup = item.ismenu ? '<span class="menu-badge">عرض</span>' : "";

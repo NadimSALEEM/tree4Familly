@@ -257,9 +257,25 @@ body {
 
 .item-price {
   margin: 0.58rem 0 0;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: wrap;
   color: var(--accent-strong);
   font-size: 1rem;
   font-weight: 800;
+}
+
+.price-primary {
+  color: inherit;
+}
+
+.price-secondary {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 
 .item-description {
@@ -293,6 +309,9 @@ body {
 }
 
 .variant-item b {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
   color: var(--accent-strong);
 }
 

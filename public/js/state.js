@@ -16,8 +16,8 @@ function toBool(value, fallback = false) {
   if (value === null || value === undefined || value === "") return fallback;
 
   const normalized = String(value).trim().toLowerCase();
-  if (["true", "1", "yes", "y", "on"].includes(normalized)) return true;
-  if (["false", "0", "no", "n", "off"].includes(normalized)) return false;
+  if (["true", "1", "yes", "y", "on", "نعم"].includes(normalized)) return true;
+  if (["false", "0", "no", "n", "off", "لا"].includes(normalized)) return false;
   return fallback;
 }
 

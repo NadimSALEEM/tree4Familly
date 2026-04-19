@@ -14,8 +14,8 @@ function toBool(value, fallback = false) {
   if (value === null || value === undefined || value === "") return fallback;
 
   const normalized = String(value).trim().toLowerCase();
-  if (["true", "1", "yes", "y", "on"].includes(normalized)) return true;
-  if (["false", "0", "no", "n", "off"].includes(normalized)) return false;
+  if (["true", "1", "yes", "y", "on", "نعم"].includes(normalized)) return true;
+  if (["false", "0", "no", "n", "off", "لا"].includes(normalized)) return false;
   return fallback;
 }
 
@@ -109,23 +109,30 @@ function mapRowsToItems(rows) {
 
   const items = dataRows.map((row, index) => {
     const venue = sanitizeText(
-      readValue(row, headerMap, ["venue", "branch", "restaurant", "type"])
+      readValue(row, headerMap, ["venue", "المكان", "branch", "restaurant", "type"])
     ).toLowerCase();
 
     const normalizedVenue = ["res1", "res2", "cafe"].includes(venue) ? venue : "res1";
-    const variants = parseVariants(readValue(row, headerMap, ["variants", "variant"]));
+    const variants = parseVariants(readValue(row, headerMap, ["variants", "اصناف", "variant"]));
 
     return {
       id:
         sanitizeText(readValue(row, headerMap, ["id", "itemid"])) ||
         `${normalizedVenue}-${index + 1}`,
-      name: sanitizeText(readValue(row, headerMap, ["name", "itemname", "title"])),
-      price: sanitizeText(readValue(row, headerMap, ["price", "baseprice"])),
-      description: sanitizeText(readValue(row, headerMap, ["description", "details", "desc"])),
-      category: sanitizeText(readValue(row, headerMap, ["category", "group", "section"])) || "أخرى",
+      name: sanitizeText(readValue(row, headerMap, ["name", "اسمالعنصر", "itemname", "title"])),
+      price: sanitizeText(readValue(row, headerMap, ["price", "السعر", "baseprice"])),
+      description: sanitizeText(
+        readValue(row, headerMap, ["description", "الوصف", "details", "desc"])
+      ),
+      category:
+        sanitizeText(readValue(row, headerMap, ["category", "النوع", "group", "section"])) ||
+        "أخرى",
       venue: normalizedVenue,
-      menu: toBool(readValue(row, headerMap, ["menu", "show", "active"]), true),
-      ismenu: toBool(readValue(row, headerMap, ["ismenu", "badge", "featured"]), false),
+      menu: toBool(readValue(row, headerMap, ["menu", "وجبة", "show", "active"]), true),
+      ismenu: toBool(
+        readValue(row, headerMap, ["ismenu", "هل يوجد عرض", "badge", "featured"]),
+        false
+      ),
       image: sanitizeText(readValue(row, headerMap, ["image"])),
       variants
     };
