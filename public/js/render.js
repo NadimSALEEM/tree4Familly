@@ -39,7 +39,7 @@ function formatSecondaryPrice(priceText) {
   if (parsed === null) return "";
 
   const converted = Math.floor(parsed / 100);
-  return ` / <span class="price-secondary"> ${escapeHTML(String(converted))} ${SECONDARY_CURRENCY_LABEL} </span>`;
+  return ` | <span class="price-secondary"> ${escapeHTML(String(converted))} ${SECONDARY_CURRENCY_LABEL} </span>`;
 }
 
 function groupItemsByCategory(items) {
@@ -78,7 +78,7 @@ function createItemCard(item) {
       )}</p>`
     : "";
 
-  const badgeMarkup = item.ismenu ? '<span class="menu-badge">عرض</span>' : "";
+  const badgeMarkup = item.ismenu ? '<span class="menu-badge">جديد</span>' : "";
 
   return `
     <article class="menu-item-card reveal ${hasImage ? "has-image" : "no-image"}">
@@ -184,15 +184,23 @@ function setupSectionObserver() {
       const visibleEntries = entries.filter((entry) => entry.isIntersecting);
       if (!visibleEntries.length) return;
 
-      visibleEntries.sort((a, b) => b.intersectionRatio - a.intersectionRatio);
-      const topSection = visibleEntries[0].target;
-      const id = topSection.getAttribute("id");
+      // Find the section with the highest intersection ratio
+      const topSection = visibleEntries.reduce((prev, current) => 
+        current.intersectionRatio > prev.intersectionRatio ? current : prev
+      );
 
+      const id = topSection.target.getAttribute("id");
+
+      // Clear all active buttons first
       elements.categoryNavList.querySelectorAll(".category-btn").forEach((button) => {
-        button.classList.toggle("is-active", button.dataset.target === id);
+        button.classList.remove("is-active");
       });
+
+      // Set only the matching button as active
+      const activeBtn = elements.categoryNavList.querySelector(`button[data-target="${id}"]`);
+      if (activeBtn) activeBtn.classList.add("is-active");
     },
-    { rootMargin: "-35% 0px -55% 0px", threshold: [0.15, 0.4, 0.75] }
+    { rootMargin: "-25% 0px -65% 0px", threshold: 0.01 }
   );
 
   sections.forEach((section) => observer.observe(section));
